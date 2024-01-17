@@ -16,5 +16,10 @@ namespace Hostel_Management
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

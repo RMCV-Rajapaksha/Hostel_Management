@@ -41,5 +41,11 @@ namespace Hostel_Management
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Rooms Myroom = new Rooms();
+            Myroom.Show();
+        }
     }
 }
