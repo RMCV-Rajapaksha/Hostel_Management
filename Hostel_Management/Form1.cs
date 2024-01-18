@@ -57,5 +57,20 @@ namespace Hostel_Management
             Myemployee.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Fees Myfees = new Fees();
+            Myfees.Show();
+            this.Hide();
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Salary mysalary = new Salary();
+            mysalary.Show();
+            this.Hide();
+        }
     }
 }

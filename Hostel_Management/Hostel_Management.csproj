@@ -52,6 +52,12 @@
     <Compile Include="Employee.Designer.cs">
       <DependentUpon>Employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fees.Designer.cs">
+      <DependentUpon>Fees.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,12 @@
     <Compile Include="Rooms.Designer.cs">
       <DependentUpon>Rooms.cs</DependentUpon>
     </Compile>
+    <Compile Include="Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary.Designer.cs">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +86,9 @@
     </Compile>
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fees.resx">
+      <DependentUpon>Fees.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -90,6 +105,9 @@
     </Compile>
     <EmbeddedResource Include="Rooms.resx">
       <DependentUpon>Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salary.resx">
+      <DependentUpon>Salary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student.resx">
       <DependentUpon>Student.cs</DependentUpon>
