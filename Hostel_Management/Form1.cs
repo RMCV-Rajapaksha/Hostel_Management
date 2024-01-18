@@ -24,7 +24,9 @@ namespace Hostel_Management
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Student Mystudent = new Student();
+            Mystudent.Show();
+            this.Hide();
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -46,6 +48,14 @@ namespace Hostel_Management
         {
             Rooms Myroom = new Rooms();
             Myroom.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Employee Myemployee = new Employee();
+            Myemployee.Show();
+            this.Hide();
         }
     }
 }

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Hostel_Management
 {
-    public partial class Rooms : Form
+    public partial class Employee : Form
     {
-        public Rooms()
+        public Employee()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void maskedTextBox4_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }
@@ -27,17 +27,7 @@ namespace Hostel_Management
 
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
@@ -47,6 +37,7 @@ namespace Hostel_Management
             Form1 Home = new Form1();
             Home.Show();
             this.Hide();
+
         }
 
         private void label5_Click(object sender, EventArgs e)

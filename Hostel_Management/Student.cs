@@ -10,39 +10,39 @@ using System.Windows.Forms;
 
 namespace Hostel_Management
 {
-    public partial class Rooms : Form
+    public partial class Student : Form
     {
-        public Rooms()
+        public Student()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void maskedTextBox6_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }
 
         private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
         {
             Form1 Home = new Form1();
             Home.Show();
@@ -52,6 +52,12 @@ namespace Hostel_Management
         private void label5_Click(object sender, EventArgs e)
         {
             Application.Exit();
+
+        }
+
+        private void Student_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
