@@ -59,5 +59,10 @@ namespace Hostel_Management
         {
 
         }
+
+        private void maskedTextBox3_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }

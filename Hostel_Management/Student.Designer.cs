@@ -101,7 +101,7 @@
             this.maskedTextBox1.ForeColor = System.Drawing.Color.Crimson;
             this.maskedTextBox1.Location = new System.Drawing.Point(38, 153);
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(300, 26);
+            this.maskedTextBox1.Size = new System.Drawing.Size(211, 26);
             this.maskedTextBox1.TabIndex = 4;
             this.maskedTextBox1.Text = "Student USN";
             this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
@@ -109,18 +109,19 @@
             // maskedTextBox3
             // 
             this.maskedTextBox3.ForeColor = System.Drawing.Color.Crimson;
-            this.maskedTextBox3.Location = new System.Drawing.Point(53, 238);
+            this.maskedTextBox3.Location = new System.Drawing.Point(38, 238);
             this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(285, 26);
+            this.maskedTextBox3.Size = new System.Drawing.Size(211, 26);
             this.maskedTextBox3.TabIndex = 6;
             this.maskedTextBox3.Text = "Father Name";
+            this.maskedTextBox3.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox3_MaskInputRejected);
             // 
             // maskedTextBox4
             // 
             this.maskedTextBox4.ForeColor = System.Drawing.Color.Crimson;
-            this.maskedTextBox4.Location = new System.Drawing.Point(38, 281);
+            this.maskedTextBox4.Location = new System.Drawing.Point(38, 280);
             this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(300, 26);
+            this.maskedTextBox4.Size = new System.Drawing.Size(211, 26);
             this.maskedTextBox4.TabIndex = 7;
             this.maskedTextBox4.Text = "Mother Name";
             // 
@@ -129,7 +130,7 @@
             this.maskedTextBox5.ForeColor = System.Drawing.Color.Crimson;
             this.maskedTextBox5.Location = new System.Drawing.Point(38, 325);
             this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.Size = new System.Drawing.Size(300, 26);
+            this.maskedTextBox5.Size = new System.Drawing.Size(211, 26);
             this.maskedTextBox5.TabIndex = 8;
             this.maskedTextBox5.Text = "Address";
             // 
@@ -138,7 +139,7 @@
             this.maskedTextBox6.ForeColor = System.Drawing.Color.Crimson;
             this.maskedTextBox6.Location = new System.Drawing.Point(38, 371);
             this.maskedTextBox6.Name = "maskedTextBox6";
-            this.maskedTextBox6.Size = new System.Drawing.Size(300, 26);
+            this.maskedTextBox6.Size = new System.Drawing.Size(211, 26);
             this.maskedTextBox6.TabIndex = 9;
             this.maskedTextBox6.Text = "College";
             this.maskedTextBox6.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox6_MaskInputRejected);
@@ -148,7 +149,7 @@
             this.maskedTextBox8.ForeColor = System.Drawing.Color.Crimson;
             this.maskedTextBox8.Location = new System.Drawing.Point(38, 193);
             this.maskedTextBox8.Name = "maskedTextBox8";
-            this.maskedTextBox8.Size = new System.Drawing.Size(300, 26);
+            this.maskedTextBox8.Size = new System.Drawing.Size(211, 26);
             this.maskedTextBox8.TabIndex = 12;
             this.maskedTextBox8.Text = "Student Name";
             // 
@@ -171,17 +172,17 @@
             "NotActive"});
             this.comboBox1.Location = new System.Drawing.Point(187, 403);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(151, 28);
+            this.comboBox1.Size = new System.Drawing.Size(62, 28);
             this.comboBox1.TabIndex = 15;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(370, 193);
+            this.dataGridView1.Location = new System.Drawing.Point(262, 193);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(521, 342);
+            this.dataGridView1.Size = new System.Drawing.Size(647, 300);
             this.dataGridView1.TabIndex = 18;
             // 
             // label3
@@ -189,7 +190,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Crimson;
-            this.label3.Location = new System.Drawing.Point(542, 149);
+            this.label3.Location = new System.Drawing.Point(491, 149);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(187, 28);
             this.label3.TabIndex = 17;
@@ -223,7 +224,7 @@
             "Left"});
             this.comboBox3.Location = new System.Drawing.Point(187, 449);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(151, 28);
+            this.comboBox3.Size = new System.Drawing.Size(62, 28);
             this.comboBox3.TabIndex = 16;
             // 
             // button3
