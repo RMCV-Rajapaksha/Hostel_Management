@@ -61,7 +61,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(924, 100);
+            this.panel1.Size = new System.Drawing.Size(1800, 100);
             this.panel1.TabIndex = 1;
             // 
             // label5
@@ -69,7 +69,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(887, 0);
+            this.label5.Location = new System.Drawing.Point(1751, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 43);
             this.label5.TabIndex = 14;
@@ -93,7 +93,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 100);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(924, 23);
+            this.panel2.Size = new System.Drawing.Size(1800, 23);
             this.panel2.TabIndex = 2;
             // 
             // StudUsn
@@ -176,19 +176,20 @@
             // StudentDGV
             // 
             this.StudentDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.StudentDGV.Location = new System.Drawing.Point(262, 193);
+            this.StudentDGV.Location = new System.Drawing.Point(388, 193);
             this.StudentDGV.Name = "StudentDGV";
             this.StudentDGV.RowHeadersWidth = 62;
             this.StudentDGV.RowTemplate.Height = 28;
-            this.StudentDGV.Size = new System.Drawing.Size(647, 300);
+            this.StudentDGV.Size = new System.Drawing.Size(1283, 300);
             this.StudentDGV.TabIndex = 18;
+            this.StudentDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StudentDGV_CellContentClick);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Crimson;
-            this.label3.Location = new System.Drawing.Point(491, 149);
+            this.label3.Location = new System.Drawing.Point(944, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(187, 28);
             this.label3.TabIndex = 17;
@@ -200,7 +201,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 575);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(924, 26);
+            this.panel3.Size = new System.Drawing.Size(1800, 26);
             this.panel3.TabIndex = 19;
             // 
             // label6
@@ -278,7 +279,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(924, 601);
+            this.ClientSize = new System.Drawing.Size(1800, 601);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -301,7 +302,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Student";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Student";
+            this.Text = "  ";
             this.Load += new System.EventHandler(this.Student_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

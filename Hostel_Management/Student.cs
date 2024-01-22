@@ -44,7 +44,7 @@ namespace Hostel_Management
         void FillRoomCombobox()
         {
             Con.Open();
-            String query = "Select * from Room_tbl";
+            String query = "Select * from Room_tbl where RoomStatus='"+"Active"+"'and Booked ='"+"Free"+"'";
             SqlCommand cmd = new SqlCommand(query, Con);
             SqlDataReader rdr;
             rdr = cmd.ExecuteReader();
@@ -69,11 +69,43 @@ namespace Hostel_Management
         private void button2_Click(object sender, EventArgs e)
         {
 
+            if (StudUsn.Text == "")
+            {
+                MessageBox.Show("Enter The Student Number");
+            }
+            else
+            {
+               
+                Con.Open();
+                String query = "update Student_tbl set StdName='" + StudName.Text + "',FatherName='" + FatherName.Text + "',MotherName='" + MotherName.Text + "',StdAddress='" + AddressTb.Text + "',College='" + CollegeTb.Text + "', StdRoom=" + (StudRoomCd.SelectedValue != null ? StudRoomCd.SelectedValue.ToString() : "NULL") + ",StdStatus=" + (StduStatusCb.SelectedValue != null ? StduStatusCb.SelectedValue.ToString() : "NULL") + " where StdUsn='" + StudUsn.Text + "' ";
+
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Student Successfully Updated");
+                Con.Close();
+                FillStudentDGV();
+
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (StudUsn.Text == "")
+            {
+                MessageBox.Show("Enter The Student Number");
+            }
+            else
+            {
 
+                Con.Open();
+                String query = "Delete from Student_tbl where StdUsn= '" + StudUsn.Text + "'";
+                SqlCommand cmd = new SqlCommand(query, Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Student Successfully Deleted");
+                Con.Close();
+                FillStudentDGV();
+
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -132,7 +164,7 @@ namespace Hostel_Management
                 cmd.Parameters.AddWithValue("@MotherName", MotherName.Text);
                 cmd.Parameters.AddWithValue("@StdAddress", AddressTb.Text);
                 cmd.Parameters.AddWithValue("@College", CollegeTb.Text);
-                cmd.Parameters.AddWithValue("@StdRoom", StudRoomCd.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@StdRoom", StudRoomCd.SelectedValue.ToString());
                 cmd.Parameters.AddWithValue("@StdStatus", StduStatusCb.SelectedItem.ToString());
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Student Successfully Added");
@@ -151,6 +183,17 @@ namespace Hostel_Management
 
         private void StduStatusCb_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void StudentDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            StudUsn.Text = StudentDGV.SelectedRows[0].Cells[0].Value.ToString();
+            StudName.Text = StudentDGV.SelectedRows[0].Cells[1].Value.ToString();
+            FatherName.Text = StudentDGV.SelectedRows[0].Cells[2].Value.ToString();
+            MotherName.Text = StudentDGV.SelectedRows[0].Cells[3].Value.ToString();
+            AddressTb.Text = StudentDGV.SelectedRows[0].Cells[4].Value.ToString();
+            CollegeTb.Text = StudentDGV.SelectedRows[0].Cells[5].Value.ToString();
 
         }
     }
