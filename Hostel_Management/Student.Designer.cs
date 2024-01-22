@@ -32,25 +32,25 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox8 = new System.Windows.Forms.MaskedTextBox();
+            this.StudUsn = new System.Windows.Forms.MaskedTextBox();
+            this.FatherName = new System.Windows.Forms.MaskedTextBox();
+            this.MotherName = new System.Windows.Forms.MaskedTextBox();
+            this.AddressTb = new System.Windows.Forms.MaskedTextBox();
+            this.CollegeTb = new System.Windows.Forms.MaskedTextBox();
+            this.StudName = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.StudRoomCd = new System.Windows.Forms.ComboBox();
+            this.StudentDGV = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.StduStatusCb = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -96,62 +96,63 @@
             this.panel2.Size = new System.Drawing.Size(924, 23);
             this.panel2.TabIndex = 2;
             // 
-            // maskedTextBox1
+            // StudUsn
             // 
-            this.maskedTextBox1.ForeColor = System.Drawing.Color.Crimson;
-            this.maskedTextBox1.Location = new System.Drawing.Point(38, 153);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(211, 26);
-            this.maskedTextBox1.TabIndex = 4;
-            this.maskedTextBox1.Text = "Student USN";
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            this.StudUsn.ForeColor = System.Drawing.Color.Crimson;
+            this.StudUsn.Location = new System.Drawing.Point(38, 153);
+            this.StudUsn.Name = "StudUsn";
+            this.StudUsn.Size = new System.Drawing.Size(211, 26);
+            this.StudUsn.TabIndex = 4;
+            this.StudUsn.Text = "Student USN";
+            this.StudUsn.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
-            // maskedTextBox3
+            // FatherName
             // 
-            this.maskedTextBox3.ForeColor = System.Drawing.Color.Crimson;
-            this.maskedTextBox3.Location = new System.Drawing.Point(38, 238);
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(211, 26);
-            this.maskedTextBox3.TabIndex = 6;
-            this.maskedTextBox3.Text = "Father Name";
-            this.maskedTextBox3.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox3_MaskInputRejected);
+            this.FatherName.ForeColor = System.Drawing.Color.Crimson;
+            this.FatherName.Location = new System.Drawing.Point(38, 238);
+            this.FatherName.Name = "FatherName";
+            this.FatherName.Size = new System.Drawing.Size(211, 26);
+            this.FatherName.TabIndex = 6;
+            this.FatherName.Text = "Father Name";
+            this.FatherName.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox3_MaskInputRejected);
             // 
-            // maskedTextBox4
+            // MotherName
             // 
-            this.maskedTextBox4.ForeColor = System.Drawing.Color.Crimson;
-            this.maskedTextBox4.Location = new System.Drawing.Point(38, 280);
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(211, 26);
-            this.maskedTextBox4.TabIndex = 7;
-            this.maskedTextBox4.Text = "Mother Name";
+            this.MotherName.ForeColor = System.Drawing.Color.Crimson;
+            this.MotherName.Location = new System.Drawing.Point(38, 280);
+            this.MotherName.Name = "MotherName";
+            this.MotherName.Size = new System.Drawing.Size(211, 26);
+            this.MotherName.TabIndex = 7;
+            this.MotherName.Text = "Mother Name";
             // 
-            // maskedTextBox5
+            // AddressTb
             // 
-            this.maskedTextBox5.ForeColor = System.Drawing.Color.Crimson;
-            this.maskedTextBox5.Location = new System.Drawing.Point(38, 325);
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.Size = new System.Drawing.Size(211, 26);
-            this.maskedTextBox5.TabIndex = 8;
-            this.maskedTextBox5.Text = "Address";
+            this.AddressTb.ForeColor = System.Drawing.Color.Crimson;
+            this.AddressTb.Location = new System.Drawing.Point(38, 325);
+            this.AddressTb.Name = "AddressTb";
+            this.AddressTb.Size = new System.Drawing.Size(211, 26);
+            this.AddressTb.TabIndex = 8;
+            this.AddressTb.Text = "Address";
             // 
-            // maskedTextBox6
+            // CollegeTb
             // 
-            this.maskedTextBox6.ForeColor = System.Drawing.Color.Crimson;
-            this.maskedTextBox6.Location = new System.Drawing.Point(38, 371);
-            this.maskedTextBox6.Name = "maskedTextBox6";
-            this.maskedTextBox6.Size = new System.Drawing.Size(211, 26);
-            this.maskedTextBox6.TabIndex = 9;
-            this.maskedTextBox6.Text = "College";
-            this.maskedTextBox6.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox6_MaskInputRejected);
+            this.CollegeTb.ForeColor = System.Drawing.Color.Crimson;
+            this.CollegeTb.Location = new System.Drawing.Point(29, 371);
+            this.CollegeTb.Name = "CollegeTb";
+            this.CollegeTb.Size = new System.Drawing.Size(211, 26);
+            this.CollegeTb.TabIndex = 9;
+            this.CollegeTb.Text = "College";
+            this.CollegeTb.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox6_MaskInputRejected);
             // 
-            // maskedTextBox8
+            // StudName
             // 
-            this.maskedTextBox8.ForeColor = System.Drawing.Color.Crimson;
-            this.maskedTextBox8.Location = new System.Drawing.Point(38, 193);
-            this.maskedTextBox8.Name = "maskedTextBox8";
-            this.maskedTextBox8.Size = new System.Drawing.Size(211, 26);
-            this.maskedTextBox8.TabIndex = 12;
-            this.maskedTextBox8.Text = "Student Name";
+            this.StudName.ForeColor = System.Drawing.Color.Crimson;
+            this.StudName.Location = new System.Drawing.Point(38, 193);
+            this.StudName.Name = "StudName";
+            this.StudName.Size = new System.Drawing.Size(211, 26);
+            this.StudName.TabIndex = 12;
+            this.StudName.Text = "Student Name";
+            this.StudName.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox8_MaskInputRejected);
             // 
             // label4
             // 
@@ -164,26 +165,23 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Room Num ";
             // 
-            // comboBox1
+            // StudRoomCd
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Active",
-            "NotActive"});
-            this.comboBox1.Location = new System.Drawing.Point(187, 403);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(62, 28);
-            this.comboBox1.TabIndex = 15;
+            this.StudRoomCd.FormattingEnabled = true;
+            this.StudRoomCd.Location = new System.Drawing.Point(187, 403);
+            this.StudRoomCd.Name = "StudRoomCd";
+            this.StudRoomCd.Size = new System.Drawing.Size(62, 28);
+            this.StudRoomCd.TabIndex = 15;
             // 
-            // dataGridView1
+            // StudentDGV
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(262, 193);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(647, 300);
-            this.dataGridView1.TabIndex = 18;
+            this.StudentDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.StudentDGV.Location = new System.Drawing.Point(262, 193);
+            this.StudentDGV.Name = "StudentDGV";
+            this.StudentDGV.RowHeadersWidth = 62;
+            this.StudentDGV.RowTemplate.Height = 28;
+            this.StudentDGV.Size = new System.Drawing.Size(647, 300);
+            this.StudentDGV.TabIndex = 18;
             // 
             // label3
             // 
@@ -216,16 +214,17 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "Student Status";
             // 
-            // comboBox3
+            // StduStatusCb
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.StduStatusCb.FormattingEnabled = true;
+            this.StduStatusCb.Items.AddRange(new object[] {
             "Living",
             "Left"});
-            this.comboBox3.Location = new System.Drawing.Point(187, 449);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(62, 28);
-            this.comboBox3.TabIndex = 16;
+            this.StduStatusCb.Location = new System.Drawing.Point(187, 449);
+            this.StduStatusCb.Name = "StduStatusCb";
+            this.StduStatusCb.Size = new System.Drawing.Size(62, 28);
+            this.StduStatusCb.TabIndex = 16;
+            this.StduStatusCb.SelectedIndexChanged += new System.EventHandler(this.StduStatusCb_SelectedIndexChanged);
             // 
             // button3
             // 
@@ -261,6 +260,7 @@
             this.button1.TabIndex = 21;
             this.button1.Text = "ADD";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
@@ -284,18 +284,18 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.StudentDGV);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.StduStatusCb);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.StudRoomCd);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.maskedTextBox8);
-            this.Controls.Add(this.maskedTextBox6);
-            this.Controls.Add(this.maskedTextBox5);
-            this.Controls.Add(this.maskedTextBox4);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.StudName);
+            this.Controls.Add(this.CollegeTb);
+            this.Controls.Add(this.AddressTb);
+            this.Controls.Add(this.MotherName);
+            this.Controls.Add(this.FatherName);
+            this.Controls.Add(this.StudUsn);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -305,7 +305,7 @@
             this.Load += new System.EventHandler(this.Student_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StudentDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,19 +317,19 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox5;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox6;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox8;
+        private System.Windows.Forms.MaskedTextBox StudUsn;
+        private System.Windows.Forms.MaskedTextBox FatherName;
+        private System.Windows.Forms.MaskedTextBox MotherName;
+        private System.Windows.Forms.MaskedTextBox AddressTb;
+        private System.Windows.Forms.MaskedTextBox CollegeTb;
+        private System.Windows.Forms.MaskedTextBox StudName;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox StudRoomCd;
+        private System.Windows.Forms.DataGridView StudentDGV;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox StduStatusCb;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;

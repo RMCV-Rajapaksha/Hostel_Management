@@ -143,7 +143,7 @@ namespace Hostel_Management
 
         private void Rooms_Load(object sender, EventArgs e)
         {
-            FillRoomDGV(); ;
+            FillRoomDGV(); 
         }
 
         private void button2_Click(object sender, EventArgs e)
