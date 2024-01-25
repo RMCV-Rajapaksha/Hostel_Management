@@ -167,5 +167,10 @@ namespace Hostel_Management
 
             }
         }
+
+        private void RoomNumtb_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }

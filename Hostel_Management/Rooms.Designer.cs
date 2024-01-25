@@ -52,6 +52,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Crimson;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -123,6 +124,7 @@
             this.RoomNumtb.Size = new System.Drawing.Size(272, 26);
             this.RoomNumtb.TabIndex = 3;
             this.RoomNumtb.Text = "RoomNumber";
+            this.RoomNumtb.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.RoomNumtb_MaskInputRejected);
             // 
             // label3
             // 

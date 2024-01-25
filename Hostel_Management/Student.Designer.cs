@@ -69,7 +69,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(1751, 9);
+            this.label5.Location = new System.Drawing.Point(1634, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 43);
             this.label5.TabIndex = 14;
