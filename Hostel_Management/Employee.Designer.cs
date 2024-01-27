@@ -103,6 +103,7 @@
             this.EmpIdTb.Size = new System.Drawing.Size(300, 26);
             this.EmpIdTb.TabIndex = 5;
             this.EmpIdTb.Text = "Employee id";
+            this.EmpIdTb.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.EmpIdTb_MaskInputRejected);
             // 
             // EmpNametb
             // 

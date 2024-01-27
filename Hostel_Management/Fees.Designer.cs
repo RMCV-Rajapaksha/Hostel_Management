@@ -32,7 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.PaymentID = new System.Windows.Forms.MaskedTextBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
@@ -96,14 +96,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "FEES PAYMENT";
             // 
-            // maskedTextBox1
+            // PaymentID
             // 
-            this.maskedTextBox1.ForeColor = System.Drawing.Color.Crimson;
-            this.maskedTextBox1.Location = new System.Drawing.Point(35, 192);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(300, 26);
-            this.maskedTextBox1.TabIndex = 15;
-            this.maskedTextBox1.Text = "Payment id";
+            this.PaymentID.ForeColor = System.Drawing.Color.Crimson;
+            this.PaymentID.Location = new System.Drawing.Point(35, 192);
+            this.PaymentID.Name = "PaymentID";
+            this.PaymentID.Size = new System.Drawing.Size(300, 26);
+            this.PaymentID.TabIndex = 15;
+            this.PaymentID.Text = "Payment id";
             // 
             // comboBox3
             // 
@@ -204,6 +204,7 @@
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(521, 342);
             this.dataGridView1.TabIndex = 30;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label7
             // 
@@ -269,6 +270,7 @@
             this.button1.TabIndex = 32;
             this.button1.Text = "ADD";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Fees
             // 
@@ -291,7 +293,7 @@
             this.Controls.Add(this.maskedTextBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.PaymentID);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -311,7 +313,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox PaymentID;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;

@@ -160,5 +160,10 @@ namespace Hostel_Management
 
             }
         }
+
+        private void EmpIdTb_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }
