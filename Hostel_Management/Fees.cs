@@ -41,7 +41,7 @@ namespace Hostel_Management
         {
 
 
-            if (PaymentID.Text == "" || StudName.Text == "" || FatherName.Text == "" || MotherName.Text == "" || AddressTb.Text == "" || CollegeTb.Text == "")
+            if (PaymentID.Text == "" || comboBox3.Text == "" || maskedTextBox2.Text == "" || comboBox1.Text == "" || dateTimePicker1.Text == "" || maskedTextBox3.Text == "")
             {
                 MessageBox.Show("No Empty Filled Accepted, ");
                 return;
@@ -52,16 +52,14 @@ namespace Hostel_Management
             try
             {
                 Con.Open();
-                string query = "INSERT INTO Student_tbl VALUES (@StdUsn, @StdName, @FatherName,@MotherName,@StdAddress,@College,@StdRoom ,@StdStatus)";
+                string query = "INSERT INTO Fees_tbl VALUES (@PaymentId, @StudentUSN, @Studentname,@StdRoom,@PaymntMonth,@College,@Amount )";
                 SqlCommand cmd = new SqlCommand(query, Con);
-                cmd.Parameters.AddWithValue("@StdUsn", StudUsn.Text);
-                cmd.Parameters.AddWithValue("@StdName", StudName.Text);
-                cmd.Parameters.AddWithValue("@FatherName", FatherName.Text);
-                cmd.Parameters.AddWithValue("@MotherName", MotherName.Text);
-                cmd.Parameters.AddWithValue("@StdAddress", AddressTb.Text);
-                cmd.Parameters.AddWithValue("@College", CollegeTb.Text);
-                cmd.Parameters.AddWithValue("@StdRoom", StudRoomCd.SelectedValue.ToString());
-                cmd.Parameters.AddWithValue("@StdStatus", StduStatusCb.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@PaymentId", PaymentID.Text);
+                cmd.Parameters.AddWithValue("@StudentUSN", comboBox3.Text);
+                cmd.Parameters.AddWithValue("@Studentname", maskedTextBox2.Text);
+                cmd.Parameters.AddWithValue("@StdRoom", comboBox1.Text);
+                cmd.Parameters.AddWithValue("@PaymntMonth", dateTimePicker1.Text);
+                cmd.Parameters.AddWithValue("@College", maskedTextBox3.Text);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Student Successfully Added");
             }
